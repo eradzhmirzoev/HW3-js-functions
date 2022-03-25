@@ -58,27 +58,24 @@ console.log('Пункт №7');
 
 function pow(x, n) {
 
-    let result = x;
+    // let result = x;
 
-    for(let i = 1; i < n; i++) {
-        result *= x;
-    }
-    return result;
+    // for(let i = 1; i < n; i++) {
+    //     result *= x;
+    // }
+    // return result;
+
+    return Math.pow(x, n);
 }
 
-console.log(pow(4, 2));
+console.log(pow(3, 2));
 
 
 
 console.log('Пункт №8');
 
 function isBigger(a, b) {
-
-    if (a > b) {
-        return true;
-    } else {
-        return false;
-    }
+    return a > b; 
 }
 
 console.log(isBigger(5, -1));
@@ -88,12 +85,7 @@ console.log(isBigger(5, -1));
 console.log('Пункт №9');
 
 function isSmaller(a, b) {
-
-    if (a < b) {
-        return true;
-    } else {
-        return false;
-    }
+    return a < b;
 }
 
 console.log(isSmaller(5, -1));
